@@ -2,6 +2,7 @@
   "expo": {
     "name": "CardioSano2026-fresh",
     "slug": "CardioSano2026-fresh",
+    "scheme": "cardiosano",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +11,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.cardiosano2026.fresh",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +22,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-web-browser"
+    ]
   }
 }
